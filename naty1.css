@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: snow;
+    background-color: seashell;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: palevioletred;
+}
+
+header {
+    background-color: palevioletred;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: mistyrose;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rosybrown;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: palevioletred
+}
+
+.hero {
+    background-color: mistyrose;
+    color: palevioletred;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about {
+    background-color: lightpink;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: mistyrose;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.project-card h3 {
+    padding: 1rem 1rem 0;
+    color: palevioletred;
+}
+
+.project-card p {
+    padding: 0 1rem 1rem;
+    color: palevioletred;
+}
+
+.contact {
+    background-color: snow;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: rosybrown;
+}
+
+.contact ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.contact ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: lavenderblush;
+    color: rosybrown;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    section {
+        padding: 3rem 1rem;
+    }
+    
+    .hero {
+        padding: 4rem 1rem;
+    }
+}
